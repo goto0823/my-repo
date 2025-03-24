@@ -4,8 +4,8 @@ jobs:
     before:
         runs-on: ubuntu-latest
         steps:
-            - id: genarate
-            run: echo "result=HELLO" >> "${GITHUB_OUTPUT}"
+            - id: generate
+              run: echo "result=HELLO" >> "${GITHUB_OUTPUT}"
         outputs:
             result: ${{ steps.generate.outputs.result }}
     after:
@@ -14,4 +14,4 @@ jobs:
         steps:
             - env:
                 RESULT: ${{ needs.before.outputs.result }}
-            - run: echo "${RESULT}"
+              run: echo "${RESULT}"
