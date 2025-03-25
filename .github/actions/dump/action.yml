@@ -1,6 +1,6 @@
 name: Dump
 description: |
-環境変数とgitHubコンテキストをログへ出力
+  環境変数とgitHubコンテキストをログへ出力
 
 inputs:
   enable-context:
